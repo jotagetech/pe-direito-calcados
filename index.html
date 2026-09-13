@@ -10,40 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Big+Shoulders+Text:wght@500;600&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper: #EFE6D3;
-    --surface: #FBF5E8;
-    --ink: #241C15;
-    --ink-soft: #4A4038;
-    --accent: #A85A2E;
-    --accent-deep: #7C3F1F;
-    --moss: #4B5A3F;
-    --line: rgba(36,28,21,0.16);
-    --shadow: rgba(36,28,21,0.18);
+    --paper: #F4EFE2;
+    --surface: #FBFAF3;
+    --ink: #262B1F;
+    --ink-soft: #5B6350;
+    --accent: #5C6F4E;
+    --accent-deep: #3F4E35;
+    --sage-light: #DCE3CD;
+    --line: rgba(38,43,31,0.16);
+    --shadow: rgba(38,43,31,0.18);
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --paper: #1B1611;
-      --surface: #241C15;
-      --ink: #F3EAD9;
-      --ink-soft: #C9BCA9;
-      --accent: #D68A52;
-      --accent-deep: #E8A97A;
-      --moss: #8FA37B;
-      --line: rgba(243,234,217,0.16);
+      --paper: #171A13;
+      --surface: #20241A;
+      --ink: #EDEBDD;
+      --ink-soft: #B9C0AA;
+      --accent: #9DB98A;
+      --accent-deep: #C3D9AE;
+      --sage-light: #2B3323;
+      --line: rgba(237,235,221,0.16);
       --shadow: rgba(0,0,0,0.4);
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"]{
-    --paper: #1B1611;
-    --surface: #241C15;
-    --ink: #F3EAD9;
-    --ink-soft: #C9BCA9;
-    --accent: #D68A52;
-    --accent-deep: #E8A97A;
-    --moss: #8FA37B;
-    --line: rgba(243,234,217,0.16);
+    --paper: #171A13;
+    --surface: #20241A;
+    --ink: #EDEBDD;
+    --ink-soft: #B9C0AA;
+    --accent: #9DB98A;
+    --accent-deep: #C3D9AE;
+    --sage-light: #2B3323;
+    --line: rgba(237,235,221,0.16);
     --shadow: rgba(0,0,0,0.4);
     color-scheme: dark;
   }
@@ -106,7 +106,7 @@
     font-size:0.85rem;
     padding:12px 22px;
     background:var(--accent);
-    color:#FBF5E8;
+    color:var(--surface);
     border-radius:2px;
     text-decoration:none;
     border:1px solid var(--accent);
@@ -246,7 +246,7 @@
   @media (prefers-reduced-motion: reduce){ .vitrine-item img{transition:none;} .vitrine-item:hover img{transform:none;} }
   .vitrine-item .tag{
     position:absolute; top:14px; left:14px;
-    background:var(--paper); color:var(--ink);
+    background:var(--sage-light); color:var(--ink);
     font-family:'Big Shoulders Text', sans-serif;
     font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em;
     padding:6px 12px; border-radius:2px;
